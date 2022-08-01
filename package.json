@@ -1,0 +1,11 @@
+{
+    "name": "grad-co-template",
+    "description": "Gruppe Adler coop mission template",
+    "version": "2.8.0",
+    "dependencies": {
+        "grad-factions": "^3.0.1",
+        "grad-fortifications": "^0.9.2",
+        "grad-introcam": "^1.0.0",
+        "grad-loadout": "^4.11.5"
+    }
+}
