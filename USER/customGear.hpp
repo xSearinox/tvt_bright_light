@@ -17,5 +17,6 @@ customGear = 600;                                                               
 customGearAllowedCategories[] = {                                               // Legt fest, welche Ausrüstungs-Kategorien von den Spielern angepasst werden dürfen.
     "uniform",
     "headgear",
-    "primaryWeapon"
+    "primaryWeapon",
+    "backpack"
 };

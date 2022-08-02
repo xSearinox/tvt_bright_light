@@ -30,7 +30,28 @@ class Side{
         "vn_b_helmet_m1_05_01",
         "vn_b_bandana_04",
         "vn_b_boonie_01_04"
+        };
     };
+    class OpforPlayers{
+    uniform[] = {
+        "vn_o_uniform_nva_dc_13_07",
+        "vn_o_uniform_nva_dc_13_08",
+        "vn_o_uniform_nva_dc_13_04",
+        "vn_o_uniform_nva_dc_14_01",
+        "vn_o_uniform_nva_dc_14_04"
+        };
+    headgear[] = {
+        "vn_o_helmet_vc_03",
+        "vn_b_headband_01",
+        "vn_o_boonie_nva_02_02",
+        "vn_c_conehat_01"
+
+        };  
+    backpack[] = {
+        "vn_o_pack_06",
+        "vn_o_pack_07",
+        "vn_o_pack_04",
+        };
     };
 
 };

@@ -14,7 +14,7 @@ private _opfor_distance = ["OpforSpawnDist", nil] call BIS_fnc_getParamValue;
 
 {
  	_x action ["Eject", vehicle _x];	
- } forEach (crew opfor_mobile);
+} forEach (crew opfor_mobile);
 
 
 // Add Opfor hint position
