@@ -18,15 +18,9 @@ private _opfor_distance = ["OpforSpawnDist", nil] call BIS_fnc_getParamValue;
 
 
 // Add Opfor hint position
-opfor_pos_marker = ["opfor_pos","Eigene Position",getPos opfor_mobile,4,nil,"hd_objective"] call custom_fnc_create_map_marker;
-[opfor_pos_marker,west,true] remoteExec ["custom_fnc_hide_map_marker"];
-[opfor_pos_marker,independent,true] remoteExec ["custom_fnc_hide_map_marker"];
-
-
+["opfor_pos","Eigene Position",getPos opfor_mobile,4,nil,"hd_objective"] remoteExec ["custom_fnc_create_map_marker",east];
 
 // add opfor hint 
 private _precision_loss = ["OpforHintPrecision", nil] call BIS_fnc_getParamValue;
 private _unprecise_spike_pos = [[[_pos,_precision_loss]]] call BIS_fnc_randomPos;
-spike_pos_marker = ["spike_pos","Spike Team",_unprecise_spike_pos,4,nil,"selector_selectedMission"] call custom_fnc_create_map_marker;
-[spike_pos_marker,west,true] remoteExec ["custom_fnc_hide_map_marker"];
-[spike_pos_marker,independent,true] remoteExec ["custom_fnc_hide_map_marker"];
+["spike_pos","Spike Team",_unprecise_spike_pos,4,nil,"selector_selectedMission"] remoteExec ["custom_fnc_create_map_marker",east];

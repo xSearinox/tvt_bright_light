@@ -26,7 +26,7 @@ disableChannels[] = {
 	{6,false,false}
 };
 
-enableDebugConsole = 1;
+enableDebugConsole = 2;
 
 
 #include "node_modules\grad-factions\list_macros.hpp"
