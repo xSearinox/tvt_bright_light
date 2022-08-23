@@ -24,3 +24,21 @@ private _opfor_distance = ["OpforSpawnDist", nil] call BIS_fnc_getParamValue;
 private _precision_loss = ["OpforHintPrecision", nil] call BIS_fnc_getParamValue;
 private _unprecise_spike_pos = [[[_pos,_precision_loss]]] call BIS_fnc_randomPos;
 ["spike_pos","Spike Team",_unprecise_spike_pos,4,nil,"selector_selectedMission"] remoteExec ["custom_fnc_create_map_marker",east];
+
+{
+if (side _x == east) then {
+    _random_face = selectRandom [
+    "vn_o_vietnamese_03_02_face_01",
+    "vn_o_vietnamese_03_02_face_02",
+    "vn_o_vietnamese_03_02_face_03",
+    "vn_o_vietnamese_03_02_face_04",
+    "vn_o_vietnamese_03_02_face_05",
+    "vn_o_vietnamese_01_02_face_01",
+    "vn_o_vietnamese_01_02_face_02",
+    "vn_o_vietnamese_01_02_face_03",
+    "vn_o_vietnamese_01_02_face_04",
+    "vn_o_vietnamese_01_02_face_05"
+    ];
+    [_x, _random_face] remoteExec ["setFace", 0, _x];
+};
+} forEach allPlayers;
