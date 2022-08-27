@@ -25,6 +25,7 @@ private _precision_loss = ["OpforHintPrecision", nil] call BIS_fnc_getParamValue
 private _unprecise_spike_pos = [[[_pos,_precision_loss]]] call BIS_fnc_randomPos;
 ["spike_pos","Spike Team",_unprecise_spike_pos,4,nil,"selector_selectedMission"] remoteExec ["custom_fnc_create_map_marker",east];
 
+private _allPlayers = call BIS_fnc_listPlayers;
 {
 if (side _x == east) then {
     _random_face = selectRandom [
@@ -41,4 +42,4 @@ if (side _x == east) then {
     ];
     [_x, _random_face] remoteExec ["setFace", 0, _x];
 };
-} forEach allPlayers;
+} forEach _allPlayers;
