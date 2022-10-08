@@ -1,6 +1,6 @@
 params ["_unprecise_spike_pos"]; 
 
-if (playerSide == east) then {
+if (playerSide == east || playerSide == civilian) then {
 	private _opfor_marker = "opfor_pos"; 
 	private _spike_marker = "spike_pos"; 
 	
