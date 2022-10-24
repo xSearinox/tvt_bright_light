@@ -182,3 +182,37 @@ class CfgGradCivs {
 class CfgGradFortifications {
     #include "USER\userFortifications.hpp"
 };
+
+class CfgDebriefing
+{  
+	class SpikeRescue
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "The spike team was successfully returned to their home base";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+	
+	class SpikeKilled
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "The spike team is KIA";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+	
+	class BlueKilled
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "The search team is KIA. There is only little hope to get out of the jungle alive";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
+	
+};
