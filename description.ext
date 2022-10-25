@@ -214,5 +214,14 @@ class CfgDebriefing
 		picture = "b_inf";
 		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
 	};
+	class RedKilled
+	{
+		title = "Mission Completed";
+		subtitle = "";
+		description = "All Dac Cong Commandos are dead, the jungle is safe again";
+		pictureBackground = "";
+		picture = "b_inf";
+		pictureColor[] = { 0.0, 0.3, 0.6, 1 };
+	};
 	
 };
