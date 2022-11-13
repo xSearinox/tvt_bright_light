@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=3478;
+		nextID=3479;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=4463;
+		nextID=4615;
 	};
 	class Camera
 	{
-		pos[]={6227.166,168.97342,11284.101};
-		dir[]={-0.66579646,-0.68720067,-0.29071125};
-		up[]={-0.62979436,0.72645843,-0.27499101};
-		aside[]={-0.40016338,-3.1141099e-007,0.91646689};
+		pos[]={5805.748,274.94656,11668.901};
+		dir[]={-0.6829412,-0.44700676,0.57773548};
+		up[]={-0.34127438,0.89452851,0.28870147};
+		aside[]={0.64585209,1.5413389e-007,0.76346284};
 	};
 };
 binarizationWanted=0;
@@ -59151,22 +59151,25 @@ class Mission
 		class Item296
 		{
 			dataType="Trigger";
-			position[]={11290.004,70.319931,14849.988};
+			position[]={11291.316,324.64108,14848.872};
 			class Attributes
 			{
 				name="spike_hint_updater";
-				condition="selectMax ((units independent) apply {opfor knowsAbout _x}) == 4;";
+				condition="selectMax((units independent) apply {opfor knowsAbout _x}) == 4";
 				onActivation="_precision_loss = [""OpforHintPrecision"", nil] call BIS_fnc_getParamValue;  " \n "_unprecise_spike_pos = [[[getPos tracee,_precision_loss]]] call BIS_fnc_randomPos; " \n "[_unprecise_spike_pos] remoteExec [""custom_fnc_update_spike_marker""];";
 				sizeA=0;
 				sizeB=0;
+				sizeC=0;
 				timeout[]={15,30,45};
 				interuptable=1;
 				repeatable=1;
 				activationType="EAST D";
+				isRectangle=1;
 				isServerOnly=1;
 			};
 			id=2966;
 			type="EmptyDetector";
+			atlOffset=254.32898;
 		};
 		class Item297
 		{
@@ -67674,7 +67677,7 @@ class Mission
 							};
 							id=3420;
 							type="vn_o_men_vc_local_18";
-							atlOffset=-0.0013275146;
+							atlOffset=-0.001335144;
 							class CustomAttributes
 							{
 								class Attribute0
