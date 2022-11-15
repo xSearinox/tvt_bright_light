@@ -8,15 +8,17 @@ if (!hasInterface) exitWith {};
 
 params ["_unit"];
 
-if (side group _unit != independent) exitWith {};
+diag_log format ["handle local %1", _unit];
+
+if (!isPlayer _unit) exitWith {};
 
 [{
-    params ["_args", "_params"];
+    params ["_args", "_handle"];
     _args params ["_unit"];
 
     // get all stored traces
     private _allTraces = missionNamespace getVariable ["GRAD_TRACES_LOCAL", []];
-    private _inVehicle = isNull objectParent _unit;
+    private _inVehicle = !isNull (objectParent _unit);
 
     // make visible on death
     if (!alive _unit) then {
