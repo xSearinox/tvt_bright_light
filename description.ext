@@ -86,7 +86,7 @@ class CfgFunctions
 			class clue_get_age {};
 			class clue_get_bearing {};
 
-			class clue_handle_local { postInit = 1; };
+			class clues_handle_local { postInit = 1; };
 			
 			class clueManager { postInit = 1; };
 			class clueTimeStamp {};
