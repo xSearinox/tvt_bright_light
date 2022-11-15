@@ -88,7 +88,7 @@ class CfgFunctions
 
 			class clues_handle_local { postInit = 1; };
 			
-			class clueManager { postInit = 1; };
+			class cluesManager { postInit = 1; };
 			class clueTimeStamp {};
 			
 			class hide_object {};

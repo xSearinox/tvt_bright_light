@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4759.5542,219.0471,12984.054};
-		dir[]={-0.33906382,-0.81888843,0.46309718};
-		up[]={-0.48375902,0.57395118,0.66072387};
-		aside[]={0.80685478,5.4948032e-008,0.59075099};
+		pos[]={4135.3833,55.564415,10317.748};
+		dir[]={-1.2363446e-007,-0.70710683,0.70710671};
+		up[]={-1.2363448e-007,0.70710677,0.70710677};
+		aside[]={0.99999994,0,1.7484555e-007};
 	};
 };
 binarizationWanted=0;
@@ -11513,7 +11513,7 @@ class Mission
 					};
 					id=172;
 					type="vn_b_men_aircrew_10";
-					atlOffset=2.780262;
+					atlOffset=2.7378712;
 				};
 				class Item2
 				{
@@ -11590,7 +11590,7 @@ class Mission
 				};
 			};
 			id=169;
-			atlOffset=0.042391777;
+			atlOffset=9.5367432e-007;
 		};
 		class Item24
 		{
@@ -11607,7 +11607,7 @@ class Mission
 			};
 			id=170;
 			type="vn_b_air_ah1g_02_usmc";
-			atlOffset=0.042391777;
+			atlOffset=9.5367432e-007;
 		};
 		class Item25
 		{
@@ -23027,7 +23027,7 @@ class Mission
 			name="s_4";
 			id=1069;
 			type="Key_F";
-			atlOffset=9.0030003;
+			atlOffset=8.5146599;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -57804,7 +57804,7 @@ class Mission
 					flags=3;
 					class Attributes
 					{
-						init="this call custom_fnc_add_clues_handler;";
+						init="this call custom_fnc_clues_handle_local;";
 						name="debug_zeus";
 						description="Truppführer@Viper";
 						isPlayable=1;
@@ -57984,7 +57984,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						init="this call custom_fnc_add_clues_handler;";
+						init="this call custom_fnc_clues_handle_local;";
 						name="opfor_mobileG";
 						description="RPG-Schütze";
 						isPlayable=1;
@@ -58198,7 +58198,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						init="this call custom_fnc_add_clues_handler;";
+						init="this call custom_fnc_clues_handle_local;";
 						description="Feldsanitäter";
 						isPlayable=1;
 						class Inventory
@@ -58439,7 +58439,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="this call custom_fnc_add_clues_handler;";
+						init="this call custom_fnc_clues_handle_local;";
 						description="MG-Schütze";
 						isPlayable=1;
 						class Inventory
@@ -58624,7 +58624,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="this call custom_fnc_add_clues_handler;";
+						init="this call custom_fnc_clues_handle_local;";
 						description="Schütze";
 						isPlayable=1;
 						class Inventory
@@ -58812,7 +58812,7 @@ class Mission
 					flags=5;
 					class Attributes
 					{
-						init="this call custom_fnc_add_clues_handler;";
+						init="this call custom_fnc_clues_handle_local;";
 						description="Schütze";
 						isPlayable=1;
 						class Inventory
@@ -59000,7 +59000,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						init="this call custom_fnc_add_clues_handler;";
+						init="this call custom_fnc_clues_handle_local;";
 						description="Scharfschütze";
 						isPlayable=1;
 						class Inventory
@@ -59943,7 +59943,7 @@ class Mission
 					side="East";
 					class Attributes
 					{
-						init="this call custom_fnc_add_clues_handler;";
+						init="this call custom_fnc_clues_handle_local;";
 						description="Fahrer@Buffalo";
 						isPlayable=1;
 						class Inventory
@@ -60135,7 +60135,7 @@ class Mission
 					flags=2;
 					class Attributes
 					{
-						init="this call custom_fnc_add_clues_handler;";
+						init="this call custom_fnc_clues_handle_local;";
 						description="Richtschütze@Mobile";
 						isPlayable=1;
 						class Inventory
@@ -64884,7 +64884,7 @@ class Mission
 				};
 			};
 			id=3249;
-			atlOffset=0.029808044;
+			atlOffset=3.1960001;
 		};
 		class Item361
 		{
@@ -64895,13 +64895,13 @@ class Mission
 				angles[]={0,2.1890442,0};
 			};
 			side="East";
-			flags=6;
+			flags=2;
 			class Attributes
 			{
 			};
 			id=3250;
 			type="vn_o_vc_static_mg42_low";
-			atlOffset=0.029808044;
+			atlOffset=3.1960001;
 		};
 		class Item362
 		{
