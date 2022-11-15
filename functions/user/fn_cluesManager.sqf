@@ -34,6 +34,7 @@ if (!isServer) exitWith {}; // only execute once on server
 
                     // store distance for next
                     missionNamespace setVariable ["GRAD_TRACE_DISTANCE_CURRENT", random [10,30,50]]];
+                };
             };
         };
     } forEach _tracedUnits;

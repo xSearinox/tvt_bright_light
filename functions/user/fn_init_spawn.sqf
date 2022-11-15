@@ -19,7 +19,7 @@ private _opfor_distance = ["OpforSpawnDist", nil] call BIS_fnc_getParamValue;
 
 
 // Add Opfor hint position
-params ["_name","_text","_pos","_channel","_creator","_type"];
+// params ["_name","_text","_pos","_channel","_creator","_type"]; // nomi: WHAT?
 ["opfor_pos","Eigene Position",getPos opfor_mobile,4,nil,"hd_objective"] remoteExec ["custom_fnc_create_map_marker",east];
 
 // add opfor hint 

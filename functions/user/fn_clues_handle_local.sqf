@@ -12,7 +12,7 @@ if (side _unit != independent) exitWith {};
 
 [{
     params ["_args", "_params"];
-    _params ["_unit"];
+    _args params ["_unit"];
 
     // get all stored traces
     private _allTraces = missionNamespace getVariable ["GRAD_TRACES_LOCAL", []];
