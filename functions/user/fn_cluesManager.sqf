@@ -12,7 +12,7 @@ if (!isServer) exitWith {}; // only execute once on server
 
     if (!(missionNamespace getVariable ["GRAD_INTROCAM_DONE", false])) exitWith {};
 
-    private _distanceToNext = missionNamespace getVariable ["GRAD_TRACE_DISTANCE_CURRENT", random [10,30,50]]];
+    private _distanceToNext = missionNamespace getVariable ["GRAD_TRACE_DISTANCE_CURRENT", selectRandom [3,7,15]];
     private _tracedUnits = missionNamespace getVariable ["GRAD_TRACED_UNITS", []];
 
     {
@@ -33,7 +33,7 @@ if (!isServer) exitWith {}; // only execute once on server
                     [_position, _type, _direction] remoteExec ["custom_fnc_clue_drop_local", east];
 
                     // store distance for next
-                    missionNamespace setVariable ["GRAD_TRACE_DISTANCE_CURRENT", random [10,30,50]]];
+                    missionNamespace setVariable ["GRAD_TRACE_DISTANCE_CURRENT", selectRandom [3,7,15]];
                 };
             };
         };

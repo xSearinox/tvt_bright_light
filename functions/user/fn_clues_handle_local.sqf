@@ -8,7 +8,7 @@ if (!hasInterface) exitWith {};
 
 params ["_unit"];
 
-if (side _unit != independent) exitWith {};
+if (side group _unit != independent) exitWith {};
 
 [{
     params ["_args", "_params"];

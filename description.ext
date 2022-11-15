@@ -100,7 +100,6 @@ class CfgFunctions
 			class create_map_marker {};
 			class hide_map_marker {};
 			class update_spike_marker {};
-			class add_clues_handler {};
 		};
 	};
 
