@@ -20,9 +20,9 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3001.2627,26.876362,8582.6719};
-		dir[]={0,-0.70710683,0.70710683};
-		up[]={0,0.70710677,0.70710677};
+		pos[]={4139.0249,45.063782,10327.63};
+		dir[]={0,-0.70710683,0.70710671};
+		up[]={0,0.70710665,0.70710677};
 		aside[]={0.99999994,0,-0};
 	};
 };
@@ -19031,7 +19031,7 @@ class Mission
 			};
 			id=879;
 			type="ModuleEffectsFire_F";
-			atlOffset=0.4119997;
+			atlOffset=0.0022706985;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19190,7 +19190,6 @@ class Mission
 			};
 			id=880;
 			type="ModuleEffectsSmoke_F";
-			atlOffset=0.41139317;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -20231,7 +20230,7 @@ class Mission
 					};
 					id=891;
 					type="vn_o_men_vc_regional_04";
-					atlOffset=14.621849;
+					atlOffset=0.26879883;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -20268,7 +20267,7 @@ class Mission
 			{
 			};
 			id=890;
-			atlOffset=14.621849;
+			atlOffset=0.26879883;
 		};
 		class Item111
 		{
@@ -20279,14 +20278,13 @@ class Mission
 				angles[]={0,5.8526196,0};
 			};
 			side="Empty";
-			flags=1;
+			flags=5;
 			class Attributes
 			{
 				disableSimulation=1;
 			};
 			id=892;
 			type="Land_vn_o_shelter_03";
-			atlOffset=15.001534;
 		};
 		class Item112
 		{
@@ -20774,7 +20772,7 @@ class Mission
 						angles[]={0,2.6279414,0};
 					};
 					side="East";
-					flags=3;
+					flags=7;
 					class Attributes
 					{
 						class Inventory
@@ -20901,7 +20899,6 @@ class Mission
 					};
 					id=920;
 					type="vn_o_men_vc_regional_04";
-					atlOffset=9.3679504;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -20938,7 +20935,6 @@ class Mission
 			{
 			};
 			id=919;
-			atlOffset=9.3679504;
 		};
 		class Item119
 		{
@@ -56075,7 +56071,6 @@ class Mission
 					};
 					id=3049;
 					type="vn_o_men_vc_regional_03";
-					atlOffset=0.13100481;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -56180,7 +56175,6 @@ class Mission
 					};
 					id=3052;
 					type="vn_o_men_vc_regional_06";
-					atlOffset=0.13334179;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -62583,7 +62577,6 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="this call custom_fnc_clues_handle_local;";
 						name="zeus";
 						description="Zeus@Zeus";
 						isPlayable=1;
