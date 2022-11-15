@@ -80,6 +80,12 @@ class CfgFunctions
 	{
 		class user
 		{
+			class clue_add_to_traced {};
+			class clue_drop_local {};
+			class clue_handle_local { postInit = 1; };
+			class clue_get_age {};
+			class clue_get_bearing {};
+			class clueManager { postInit = 1; };
 			class hide_object {};
 			class unhide_crashsite {};
 			class show_hint {};
