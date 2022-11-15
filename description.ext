@@ -86,6 +86,7 @@ class CfgFunctions
 			class clue_get_age {};
 			class clue_get_bearing {};
 			class clueManager { postInit = 1; };
+			class clueTimeStamp;
 			class hide_object {};
 			class unhide_crashsite {};
 			class show_hint {};
