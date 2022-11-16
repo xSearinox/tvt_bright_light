@@ -9,8 +9,11 @@ params ["_position", "_type", "_direction"];
 
 
 private _allTraces = missionNamespace getVariable ["GRAD_TRACES_LOCAL", []];
-private _tracePiece = createSimpleObject [_type, _position, true];
+// private _tracePiece = createSimpleObject [_type, _position, true];
+
+private _tracePiece = "UserTexture_1m_F" createVehicleLocal _position;
 _tracePiece setDir _direction;
+_tracePiece setObjectTexture [0,_type];
 _tracePiece setObjectMaterial [0,"\a3\Data_f\Lights\Car_Beacon_Blue_emit.rvmat"]; // make footstep glow / better visible
 
 private _helper = "Sign_Sphere10cm_F" createVehicle [0,0,0];
