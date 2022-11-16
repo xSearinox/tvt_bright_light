@@ -7,14 +7,23 @@
 
 params ["_position", "_type", "_direction"];
 
+diag_log format ["_tracePiece %1 %2 %3", _position, _type, _direction];
 
 private _allTraces = missionNamespace getVariable ["GRAD_TRACES_LOCAL", []];
 // private _tracePiece = createSimpleObject [_type, _position, true];
 
-private _tracePiece = "UserTexture_1m_F" createVehicleLocal _position;
+private _tracePiece = "UserTexture1m_F" createVehicleLocal _position;
 _tracePiece setDir _direction;
 _tracePiece setObjectTexture [0,_type];
-_tracePiece setObjectMaterial [0,"\a3\Data_f\Lights\Car_Beacon_Blue_emit.rvmat"]; // make footstep glow / better visible
+
+
+_tracePiece setObjectMaterial [0,"data\footstep.rvmat"]; // make footstep glow / better visible
+_tracePiece setPos [_position#0, _position#1, 0.1]; // make sure to lift above ground
+// private _vectorUp = surfaceNormal position _tracePiece;
+// _tracePiece setVectorDirAndUp [[1,0,0], _vectorUp];
+[_tracePiece, -90, 0] call BIS_fnc_setPitchBank;
+
+//
 
 private _helper = "Sign_Sphere10cm_F" createVehicle [0,0,0];
 
