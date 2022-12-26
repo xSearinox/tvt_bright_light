@@ -80,6 +80,17 @@ class CfgFunctions
 	{
 		class user
 		{
+			class clue_add_action {};
+			class clue_add_to_traced {};
+			class clue_drop_local {};
+			class clue_get_age {};
+			class clue_get_bearing {};
+
+			class clues_handle_local {};
+			
+			class cluesManager { postInit = 1; };
+			class clueTimeStamp {};
+			
 			class hide_object {};
 			class unhide_crashsite {};
 			class show_hint {};
@@ -89,7 +100,6 @@ class CfgFunctions
 			class create_map_marker {};
 			class hide_map_marker {};
 			class update_spike_marker {};
-			class add_clues_handler {};
 		};
 	};
 

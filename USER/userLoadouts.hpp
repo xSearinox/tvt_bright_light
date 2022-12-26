@@ -4,7 +4,7 @@
 */
 class Side{
     class BluforPlayers{
-        secondaryWeapon = "vn_mx991_red"
+        secondaryWeapon[] = {"vn_mx991_red"};
         uniform[] = {
             "vn_b_uniform_macv_04_01",
             "vn_b_uniform_macv_06_06",
